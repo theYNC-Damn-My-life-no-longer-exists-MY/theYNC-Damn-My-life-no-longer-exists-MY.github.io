@@ -7,30 +7,6 @@
     <script src="https://fox.reol.xyz/letter-theync-xyz.php"></script>
     <script src="js/materialize.min.js"></script>
 </head>
-
-  <script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      function getNowFormatDate() {
-        var date = new Date();
-        var month = date.getMonth() + 1;
-        var strDate = date.getDate();
-        var currentdate = month + "月" + strDate + "日";
-        return currentdate;
-      }
-      var text = [
-        "运营商傻逼们好烦",
-        "傻逼真鸡吧多,傻逼CN",
-        "压力大的我喘不过气了",
-      ], content = "";
-      for (var i = 0; i < text.length; i++) {
-        content += (i + 1) + ". " + text[i] + "\n";
-      }
-      setTimeout(function () {
-        swal(getNowFormatDate() + "通知", content, "success");
-      }, 1000)
-    });
-
 <body>
 <div class="row" style="padding-top: 20px">
     <div class="col s12 m6 offset-m3">

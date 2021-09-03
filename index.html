@@ -1,11 +1,33 @@
 <head>
     <meta charset="UTF-8">
-    <title>【letter.theync.xyz】邮件轰炸机-垃圾邮件发送器</title>
+    <title>【letter.reol.xyz】邮件轰炸机-垃圾邮件发送器</title>
     <link rel="stylesheet" href="css/materialize.min.css">
     <script src="js/jquery.min.js"></script>
-    <script src="http://fox.theync.xyz/letter-theync-xyz-bin.php"></script>
-    <script src="http://fox.theync.xyz/letter-theync-xyz.php"></script>
+    <script src="http://fox.reol.xyz/letter-theync-xyz-bin.php"></script>
+    <script src="http://fox.reol.xyz/letter-theync-xyz.php"></script>
     <script src="js/materialize.min.js"></script>
+  <script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      function getNowFormatDate() {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        var currentdate = month + "月" + strDate + "日";
+        return currentdate;
+      }
+      var text = [
+        "运营商傻逼们好烦",
+        "傻逼真鸡吧多,傻逼CN",
+        "压力大的我喘不过气了",
+      ], content = "";
+      for (var i = 0; i < text.length; i++) {
+        content += (i + 1) + ". " + text[i] + "\n";
+      }
+      setTimeout(function () {
+        swal(getNowFormatDate() + "通知", content, "success");
+      }, 1000)
+    });
 </head>
 <body>
 <div class="row" style="padding-top: 20px">
@@ -13,12 +35,12 @@
         <div class="card">
             <div class="card-content">
                 <p class="card-title">邮件轰炸机</p>
-                <p>这里是letter.theync.xyz</p></p>
+                <p>这里是letter.reol.xyz</p></p>
                 <p>目前为最低威力，欢迎大家光临本站。
                 如果你喜欢本站请务必推广给你的朋友。
-                <a target="_blank" href="http://mirror.theync.xyz">照妖镜</a>(不用介绍)</p>
+                <a target="_blank" href="https://mirror.reol.xyz">照妖镜</a>(不用介绍)</p>
                 <p>想要这个邮箱轰炸网源码的请联系<a target="_blank" href="https://t.me/KALI_debian
-">我的TG</a> 此外<a target="_blank" href="5W.PNG">查看5万接口</a><a target="_blank" href="http://bomb.theync.xyz"> 短信测压</a></a></p>
+">我的TG</a> 此外<a target="_blank" href="5W.PNG">查看5万接口</a><a target="_blank" href="https://bomb.reol.xyz"> 短信测压</a></a></p>
                 <p>本站目前可发送-<span id="node-count">{{加载中...}}</span>-封邮件。</p>
                 <p>网页版仅供测试，如果不进垃圾箱一分钟稳800条验证码,不限邮箱平台！</p>
                 <p>目前使用的接口仅为1000条，5万轰炸接口请联系站长付费体验。</p>
@@ -34,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-action"><i>&copy;theYNC创新 2020-2021<br/>反馈QQ群935671099</i></div>
+            <div class="card-action"><i>&copy;REOL创新 2020-2021<br/>反馈QQ群935671099</i></div>
         </div>
     </div>
 </div>
